@@ -6,7 +6,11 @@ namespace LearnCode
     {
         static void Main(string[] args)
         {
+            Console.Title = "AI Bot";
+
             Console.WriteLine("Hello World!");
+
+            Console.ReadKey();
         }
     }
 }

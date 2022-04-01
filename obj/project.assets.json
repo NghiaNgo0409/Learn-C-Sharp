@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Coding\\C#\\LearnCode\\LearnCode.csproj",
+      "projectUniqueName": "D:\\Coding\\C#\\LearnCode\\Learn-C-Sharp\\LearnCode.csproj",
       "projectName": "LearnCode",
-      "projectPath": "D:\\Coding\\C#\\LearnCode\\LearnCode.csproj",
+      "projectPath": "D:\\Coding\\C#\\LearnCode\\Learn-C-Sharp\\LearnCode.csproj",
       "packagesPath": "C:\\Users\\Nghia\\.nuget\\packages\\",
-      "outputPath": "D:\\Coding\\C#\\LearnCode\\obj\\",
+      "outputPath": "D:\\Coding\\C#\\LearnCode\\Learn-C-Sharp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Nghia\\AppData\\Roaming\\NuGet\\NuGet.Config",
