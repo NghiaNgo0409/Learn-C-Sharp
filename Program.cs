@@ -9,22 +9,20 @@ namespace LearnCode
             Console.Title = "AI Bot";
             Console.ForegroundColor = ConsoleColor.DarkCyan;
 
-            Random numberGen = new Random();
-            int roll1 = 0;
-            int roll2 = 1;
-            int attemp = 0;
-            Console.WriteLine("Press key to roll dices");
-            while(roll1 != roll2)
+            int numsOfStudent = 0;
+            Console.Write("Please type number of students in this class: ");
+            numsOfStudent = Convert.ToInt32(Console.ReadLine());
+            string[] names = new string[numsOfStudent];
+            for (int i = 0; i < numsOfStudent; i++)
             {
-                Console.ReadKey();
-                roll1 = numberGen.Next(1, 7);
-                roll2 = numberGen.Next(1, 7);
-                Console.WriteLine("The number of dice 1 is " + roll1);
-                Console.WriteLine("The number of dice 2 is " + roll2);
-                attemp++;
+                names[i] = Console.ReadLine();
             }
 
-            Console.WriteLine("You take " + attemp + " attemps to roll a kind of dices");
+            Array.Sort(names);
+            for (int i = 0; i < numsOfStudent; i++)
+            {
+                Console.WriteLine(names[i]);
+            }
 
             Console.ReadKey();
         }
