@@ -9,15 +9,22 @@ namespace LearnCode
             Console.Title = "AI Bot";
             Console.ForegroundColor = ConsoleColor.DarkCyan;
 
-            double num1, num2, num3, average;
-            Console.WriteLine("Input number 1: ");
-            num1 = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Input number 2: ");
-            num2 = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Input number 3: ");
-            num3 = Convert.ToDouble(Console.ReadLine());
-            average = (num1 + num2 + num3) / 3;
-            Console.WriteLine("The average of three number is " + average);
+            Random numberGen = new Random();
+            int roll1 = 0;
+            int roll2 = 1;
+            int attemp = 0;
+            Console.WriteLine("Press key to roll dices");
+            while(roll1 != roll2)
+            {
+                Console.ReadKey();
+                roll1 = numberGen.Next(1, 7);
+                roll2 = numberGen.Next(1, 7);
+                Console.WriteLine("The number of dice 1 is " + roll1);
+                Console.WriteLine("The number of dice 2 is " + roll2);
+                attemp++;
+            }
+
+            Console.WriteLine("You take " + attemp + " attemps to roll a kind of dices");
 
             Console.ReadKey();
         }
