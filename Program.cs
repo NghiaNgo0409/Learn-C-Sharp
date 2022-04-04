@@ -9,22 +9,15 @@ namespace LearnCode
             Console.Title = "AI Bot";
             Console.ForegroundColor = ConsoleColor.DarkCyan;
 
-            int numsOfStudent = 0;
-            Console.Write("Please type number of students in this class: ");
-            numsOfStudent = Convert.ToInt32(Console.ReadLine());
-            string[] names = new string[numsOfStudent];
-            for (int i = 0; i < numsOfStudent; i++)
-            {
-                names[i] = Console.ReadLine();
-            }
+            Console.WriteLine(CountWordsInString("I am a human"));
 
-            Array.Sort(names);
-            for (int i = 0; i < numsOfStudent; i++)
-            {
-                Console.WriteLine(names[i]);
-            }
 
             Console.ReadKey();
+        }
+
+        static int CountWordsInString(string s)
+        {
+            return s.Split(' ').Length;
         }
     }
 }
